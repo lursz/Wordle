@@ -42,10 +42,12 @@ for (my $i = 0; $i < 6; $i++) {
     # make certain that the user enters a valid word
     while(1)
     {
+        print "> ";
         $input = <STDIN>;
         chomp $input;
         if ($input eq '/rules') {
             say $welcome_->rules();
+            print "> ";
             $input = <STDIN>;
             chomp $input;
         }
@@ -84,7 +86,7 @@ for (my $i = 0; $i < 6; $i++) {
    }
 
     # Print the result array
-    say " --- ", $i + 1, " --- ";
+    say "\n --- ", $i + 1, " --- ";
     for (my $j = 0; $j < 5; $j++) {
         if ($result[$j] == 2) {
             $word_processing_->printBoldGreen(substr($input, $j, 1));

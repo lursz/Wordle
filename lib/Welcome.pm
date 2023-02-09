@@ -32,7 +32,6 @@ The colour of the tiles will indicate how close you are to the word:
     - Yellow: The letter is in the word, but not in the correct position.
     - Green: The letter is in the word and in the correct position.
 Good luck!
-
 Type in your word:
 END
 return $rules;

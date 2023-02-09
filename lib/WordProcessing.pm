@@ -31,7 +31,6 @@ sub getRandomWord {
 
     # return a random word
     my $random_word = $worlde_array[rand @worlde_array];
-    say $random_word;
 
     return $random_word;
 }
