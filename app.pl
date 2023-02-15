@@ -24,7 +24,7 @@ my $input;
 # array containging answers to particular rounds
 my @result = (0) x 5;
 
-# mapping letters to array indexes using ACVII code -65
+# mapping letters to array indexes using ASCII code -65
 # 0:A, 1:B, 2:C ... 25:Z
 my @bool_alphabet;
 
@@ -32,14 +32,14 @@ my @bool_alphabet;
 # -------------------------------- Game logic -------------------------------- #
 for (my $i = 0; $i < 6; $i++) {
 
-    # incrementing the bool_alphabet's values when the letter is found in the answer
+    # Incrementing the bool_alphabet's values when the letter is found in the answer
     @bool_alphabet = (0) x 26; 
     for (my $i = 0; $i < length($answer); $i++){
         $bool_alphabet[ord(substr($answer, $i, 1)) - 65]++;
     }
 
 
-    # make certain that the user enters a valid word
+    # Make certain that the user enters a valid word
     while(1)
     {
         print "> ";
