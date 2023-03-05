@@ -1,6 +1,6 @@
 # WORDLE
 ## About
-Wordle is a simple word game, it original version is available [here](https://www.nytimes.com/games/wordle/index.html).
+Wordle is a simple word game, its original version is available [here](https://www.nytimes.com/games/wordle/index.html).
 
 ## Run
 In order to run the game you need to have Perl installed on your computer.  
